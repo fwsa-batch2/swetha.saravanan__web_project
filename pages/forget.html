@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>forgot</title>
+    <link rel="stylesheet" href="../assets/css/forgot.css">
+</head>
+
+<body>
+    
+        <div class="forget">
+            <h1 style="margin-left: 120px;">FORGOT PASSWORD ?</h1>
+            <form method="post">
+                <h2 style="margin-left: 230px;">Email-id</h2>
+                <input type="email"id="mail"style="margin-left:100px;" placeholder="myname.ex@gmail.com"  required><button onclick="forgot(event);sendEmail(event);">Send OTP</button><br>
+                <input type="number" id="otp" style="margin-left : 100px;"placeholder="Enter OTP" required><button>Submit</button>
+                <input type="password" id="create" style="margin-left :100px;"placeholder="Create Password" required>
+                <input type="password" id="confirm" style="margin-left:100px;"placeholder="Confirm Password" required>
+            </form>
+            <button onclick="redirect()" style="margin-left : 170px;">Back</button>
+            <button onclick="updatePass(event)">Login</button>
+            
+        </div>
+    <script src="https://smtpjs.com/v3/smtp.js" integrity=""></script>
+    <script src="../assets/js/password.js"></script>
+</body>
+
+</html>

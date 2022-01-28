@@ -1,0 +1,123 @@
+*{
+  font-family: system-ui;
+}
+.day1 {
+  border: 1px solid;
+  padding: 10px 10px;
+  box-shadow: 1px 1px 1px 1px #888888;
+  margin-left: 500px;
+  width: 800px;
+}
+.Day1 {
+  border: 1px solid;
+  padding: 10px 10px;
+  box-shadow: 1px 1px 1px 1px #888888;
+  margin-left: 500px;
+  width: 800px;
+}
+
+.Day2 {
+  border: 1px solid;
+  padding: 10px 10px;
+  box-shadow: 1px 1px 1px 1px #888888;
+  margin-left: 500px;
+  width: 800px;
+}
+.Day3 {
+  border: 1px solid;
+  padding: 10px 10px;
+  box-shadow: 1px 1px 1px 1px #888888;
+  margin-left: 500px;
+  width: 800px;
+}
+.Day4 {
+  border: 1px solid;
+  padding: 10px 10px;
+  box-shadow: 1px 1px 1px 1px #888888;
+  margin-left: 500px;
+  width: 800px;
+}
+.Day5 {
+  border: 1px solid;
+  padding: 10px 10px;
+  box-shadow: 1px 1px 1px 1px #888888;
+  margin-left: 500px;
+  width: 800px;
+}
+.Day6 {
+  border: 1px solid;
+  padding: 10px 10px;
+  box-shadow: 1px 1px 1px 1px #888888;
+  margin-left: 500px;
+  width: 800px;
+}
+.ins {
+  border: 1px solid;
+  padding: 10px 10px;
+  box-shadow: 1px 1px 1px 1px #888888;
+  margin-left: 500px;
+  width: 800px;
+}
+.slidepanel {
+  box-shadow: 1px 1px 1px 1px #888888;
+  top : 0px;
+  right : 0px;
+  width: 0px;
+  position :fixed;
+  background-color : white;
+ 
+}
+.flight {
+  display: inline-flex;
+}
+
+div {
+  display: inline-block;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.align {
+  display: inline-flex;
+}
+ .container {
+  margin-left: 150px;
+  padding: 10px;
+} 
+.text {
+  margin-left: 200px;
+}
+button {
+  padding : 10px 10px;
+  background-image:linear-gradient(to left, #6a11cb, #2575fc);
+  color:white;
+  font-size :15px;
+  border-radius: 50px;
+  font-weight: bold;
+  width : 150px;
+  margin-left : 800px;
+}
+.select {
+  background-image:linear-gradient(to left, #6a11cb, #2575fc);
+  color:white;
+  font-size :15px;
+  border-radius: 50px;
+  font-weight: bold;
+  width : 150px;
+  text-align: center;
+  margin-left : 200px;
+}
+a {
+  text-decoration: none;
+  color : white;
+}
+.book {
+  width : 300px;
+  font-size: 20px;
+}
+iframe {
+  width : 500px;
+  height : 500px;
+}

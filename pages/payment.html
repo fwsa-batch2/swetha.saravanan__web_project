@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>payment</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style1.css">
+    <style>
+        body {
+            background-image: url('../assets/images/paym.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        .demo {
+            margin-left: 100px;
+
+        }
+        select {
+            appearance: none;
+        }
+    </style>
+
+<body>
+
+    <strong>
+        <h1 style="text-align: center;">Payment</h1>
+        <div class="demo">
+            <form onsubmit="payment(event) ,redirect()">
+
+                <h3>Card holder name</h3>
+                <input type="text"id="name" required>
+                <h3>Credit card number</h3>
+                <input type="text"id="number" required>
+                <h3>CVV code</h3>
+                <input type="password" id="password" required>
+                <h3>Expiration Year</h3>
+                <input type="month" id="Year" min="2022-01"  required><br><br>
+                <button>Pay now</button>
+            </form>
+        </div>
+    </strong>
+    <script src="https://smtpjs.com/v3/smtp.js" integrity=""></script>
+    <script src="../assets/js/payment.js"></script>
+</body>
+
+</html>

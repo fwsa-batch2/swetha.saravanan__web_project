@@ -1,0 +1,28 @@
+   .demo {
+        display: flex;
+        margin-left: 250px;
+        margin-top: 150px;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+
+    .demo2 {
+        height: 600px;
+        width: 700px;
+    }
+
+    p {
+        font-size: 23px;
+        margin-left: 10px;
+    }
+
+    h3 {
+        margin-left: 10px;
+    }
+
+    li {
+        margin-left: 10px;
+        font-size: 22px;
+    }

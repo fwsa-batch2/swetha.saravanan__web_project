@@ -1,0 +1,43 @@
+*{ 
+  font-family: system-ui;
+}
+.id {
+  margin-left: 100px;
+  width: 1000px;
+}
+.demo {
+  height: 250px;
+  width: 350px;
+  border-radius: 10px;
+}
+
+.add {
+  width: 350px;
+  height: 150px;
+}
+input {
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 300px;
+}
+button {
+  color: white;
+  background-color: #04aa6d;
+  padding: 10px 10px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+}
+a {
+  color: white;
+  padding: 10px 10px;
+  width: 200px;
+  border: none;
+  text-decoration: none;
+}
+select {
+ background-color: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 300px;
+}

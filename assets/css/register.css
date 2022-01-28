@@ -1,0 +1,71 @@
+body {
+  background-image: url("../images/back.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+* {
+  font-family: system-ui;
+}
+input[type=text] {
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 300px;
+  margin-left: 30px;
+}
+input[type=number] {
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 300px;
+  margin-left: 30px;
+}
+input[type=password] {
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 300px;
+  margin-left: 30px;
+}
+input[type=email] {
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 300px;
+  margin-left: 30px;
+}
+.register {
+  border-radius: 10px;
+  margin-top: 50px;
+  width: 550px;
+  padding: 20px 20px;
+  margin-left: 500px;
+}
+h1 {
+  margin-bottom: 10px;
+}
+
+.demo {
+  padding: 20px 20px;
+  margin-left: 100px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  border-radius : 10px;
+}
+
+button {
+  color: white;
+  background-color: #04aa6d;
+  padding: 10px 10px;
+  width: 200px;
+  border: none;
+  margin-bottom: 5%;
+}
+
+input[type="password"] {
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 200px;
+}
+#login {
+  color: blue;
+  text-decoration: none;
+}

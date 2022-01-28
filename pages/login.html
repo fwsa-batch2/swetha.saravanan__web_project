@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>login</title>
+    <style>
+        .background {
+            background-image: url('../assets/images/log.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+
+        img {
+            width: 20%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 300px;
+            border-radius: 10px;
+            padding: 10px 10px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            color: white;
+            background-color: #04AA6D;
+            padding: 10px 10px;
+            width: 200px;
+            border: none;
+            border-radius: 10px;
+        }
+        a {
+            text-decoration: none;
+            margin-top: 200px;
+            color: white;
+            font-size : 20px;
+        }
+
+        .login {
+            margin-top: 100px;
+
+            width: 500px;
+            padding: 20px 20px;
+            border-radius: 10%;
+            background: rgb(0, 0, 0);
+            /* Fallback color */
+            background: rgba(0, 0, 0, 0.5);
+            /* Black background with 0.5 opacity */
+            color: #f1f1f1;
+            margin-left:600px;
+        }
+    </style>
+</head>
+
+<body class="background">
+    
+        <form onsubmit="userLogin()">
+            <div class="login">
+                <h1 style="margin-left : 125px;">Fantastic journeys</h1>
+                <h2 style="margin-left : 80px;">Welcome to Fantastic journeys</h2>
+                <strong>
+                    <h1  style="margin-left : 175px;"> Login form</h1>
+                    <img src="../assets/images/login.jpg" style="margin-left : 190px;" alt="avatar">
+
+                    <h2 style="margin-left : 190px;"> Email-id :</h2>
+                    <input type="email" style="margin-left : 90px;" placeholder="Enter your Email-id" id="email"
+                        pattern="[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,}$" required>
+                    <h2 style="margin-left : 190px;"> Password :</h2>
+                    <input type="password" style="margin-left : 90px;"placeholder="password" id="password" minlength="8"
+                        pattern="[A-Za-z0-9]{1,255}" required><br><br>
+                    <a href="../pages/fantastic.html">
+                        <button type="submit" style="margin-left : 150px;"><strong>Login</strong></button></a><br><br><br>
+                    <p id="log"></p>
+                    <a href="../pages/forget.html"style="margin-left : 140px;"> Forget password ?</a>
+                    <a href="../pages/register.html"> &nbsp;&nbsp;&nbsp;New user ?</a>
+                    </strong>
+            </div>
+        </form>
+        
+            <script src="../assets/js/login.js"></script>
+</body>
+
+</html>

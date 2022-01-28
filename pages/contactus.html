@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>contact</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style1.css">
+    <style>
+        body {
+            background-image: url('../assets/images/travel.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size : 100% 100%;
+        }
+        textarea {
+            border-radius: 10px;
+            height: 200px;
+            width: 400px;
+            border-color: black;
+        }
+        div {
+            width : 500px;
+            background-color: white;
+            margin-left : 700px;
+            padding : 30px 30px;
+            height : 700px;
+            border-radius: 30px;
+        }
+        img {
+            height : 100px;
+            width : 150px;
+        }
+        mark {
+            color :blue;
+            background-color: white;
+        }
+    </style>
+    <h1 style="text-align: center;">Contact us </h1>
+</head>
+
+<body>
+    <div>
+        <form onsubmit="contact(event)">
+            <h2>For Any Queries and Suggestions</h2>
+            <h3>Email-id</h3>
+            <input type="email"id="email" placeholder="myname@gmail.com" required><br><br>
+            <h3>Queries/Suggestions</h3>
+            <textarea required id="query"></textarea><br><br>
+            <button style="margin-left : 110px;"><strong>Submit</strong></button>
+        </form>
+        <h2>Follow us on</h2>
+        <h2>Email-id:<mark> fantasticjourneys09@gmail.com</mark></h2>
+        <a href="https://twitter.com/"><img src="../assets/images/twitter.png" alt="twitter"></a>
+        <a href="https://facebook.com/"><img src="../assets/images/fb.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/?hl=en"><img src="../assets/images/instra.png" style="margin-left : 350px;margin-top: -300px;" alt="instagram"></a>
+    </div>
+    <br><br>
+    <script src="../assets/js/contact.js"></script>
+</body>
+
+</html>

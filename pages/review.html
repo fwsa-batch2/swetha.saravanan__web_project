@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <style>
+        * {
+            font-family: system-ui;
+        }
+        body {
+            background-image :linear-gradient(to left, rgb(138, 138, 233),rgb(176, 157, 185));
+        }
+       #decorate {
+            background-image:linear-gradient(to left, #6a11cb, #2575fc);
+            padding:10px 10px;
+            width : 300px;
+            margin-left : 750px;
+            border-radius: 10px;
+        }
+        span {
+            font-size : 45px;
+            color: white;
+        }
+        input {
+            width : 250px;
+            border-radius: 10px;
+            padding : 10px 10px;
+        }
+        textarea {
+            width : 500px;
+            height : 200px;
+            border-radius : 15px;
+        }
+        button {
+            background-color: #04aa6d;
+            padding : 10px 10px;
+            color : white;
+            font-weight: bold;
+            border-radius : 10px;
+        }
+        select {
+            background-image:linear-gradient(to left, #6a11cb, #2575fc);
+            padding:10px 10px;
+            width : 300px;
+            border-radius: 10px;
+            appearance: none;
+            font-size : 45px;
+        }
+      #star1 {
+          text-align: center;
+            color : white;
+        }
+        div {
+            color : white;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom : 20px;
+        }
+        
+    </style>
+</head>
+<body> 
+<div style="text-align: center;">
+    <h2 style="text-align: center; color:white">RATINGS</h2>
+    <br><br><br>
+    <form onsubmit="rearrange(event)">
+    <select name="review" id="review">
+    <option value="stars"id="star1" style="color: black;">&#9734;&#9734;&#9734;&#9734;&#9734;</option>
+    <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐	</option>
+    <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+    <option value="⭐⭐⭐">⭐⭐⭐</option>
+    <option value="⭐⭐">⭐⭐</option>
+    <option value="⭐">⭐</option>
+    </select><br><br>
+   <div id="name"></div>
+   <div id="date"></div>
+    <textarea pattern="[A-Za-z]{1,255}" id="feedback" placeholder="Send Feedback here" required></textarea><br><br>
+    <button >Submit</button></form>
+</div>
+<h2 id="rate"></h2>
+<h2 id="comments"></h2>
+<script src="../assets/js/review.js"></script>
+
+ 
+</body>
+</html>

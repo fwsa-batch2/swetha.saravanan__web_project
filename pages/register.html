@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>register</title>
+    <link rel="stylesheet" href="../assets/css/register.css">
+</head>
+
+<body class="register">
+
+    <div class="demo">
+        <form onsubmit="submitHandler(event)">
+            <h1 text-align="center">REGISTRATION</h1>
+            <h2 style="margin-left: 30px;">Name :</h2>
+            <input type="text" id="name" minlength="3" placeholder="Enter your name" pattern="[A-Za-z]{3,255}" title="User name must be greater than 3 characters" required>
+            <h2 style="margin-left: 30px;"> Email :</h2>
+            <input type="email" id="email" placeholder="@gmail.com" pattern="[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,}$"
+                required>
+            <h2 style="margin-left:30px;">Phone no :</h2>
+            <input type="number" id="phoneno" title="Value must be less than or equal to 9999999999" min="6000000000" max="9999999999"  placeholder="Enter your phone no" style="width:300px"
+                required>
+            <h2 style="margin-left: 30px;">New password*</h2>
+            <input type="password"  style="width:300px" placeholder="create password" id="create"
+                pattern="[A-Za-z0-9]{5,12}" required>
+            <h2 style="margin-left: 30px;">Confirm password*</h2>
+            <input type="password"  style="width:300px" placeholder="confirm password" id="confirm"
+                pattern="[A-Za-z0-9]{5,12}" required><br><br>
+                <input type="checkbox" id="check" style="margin-left : 100px;" onchange="checkBox()"><h3 style="margin-top:-20px; margin-left : 115px;">Show Password</h3>
+            <button type="submit" style=" margin-left: 100px;margin-top:15px; font-weight: bold; border-radius: 50px;">Submit</button>
+            <h3>Already Have an account <a href="../index.html" id="login">Sign In</a> please</h3>
+            
+        </form>
+       
+    <script src="../assets/js/register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display details</title>
+    <style>
+        * {
+            font-family: system-ui;
+        }
+        table {
+            border-collapse: collapse;
+            margin-left : 170px;
+        }
+        td,
+        th {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+            width : 200px;
+        }
+        th {
+            padding : 10px 10px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        td {
+            padding : 10px 10px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        #coloumn1 {
+            width : 50px;
+        }
+        #no {
+            width : 50px;
+        }
+        #essential {
+            text-align: center;
+        }
+        img {
+            border-radius: 50%;
+        }
+        #got {
+            margin-bottom : 100px;
+        }
+    </style>
+</head>
+
+<body> 
+    <div id="essential">
+        <img src=".././assets/images/journey.jpg" alt="journey">
+        <h2 id="name">Dear </h2>
+        <h2>Congratulations!,Thank you for using Fantastic journeys's Facility.Your Booking details indicated below</h2>
+        <h2 id="date">Date of Departure :</h2>
+        <h2 id="return">Date of Return :</h2>
+        <h2 id="adult">No of Adults : </h2>
+        <h2 id="child">No of Children : </h2>
+    </div>  
+    <h2 style="margin-left: 170px;">Passenger Details</h2>
+    <div id="display">
+        <table>
+            <caption></caption>
+            <tr>
+                <th id="coloumn1">S.No</th>
+                <th id="coloumn2">Name</th>
+                <th id="coloumn3">Age</th>
+                <th id="coloumn4">Passport Number</th>
+                <th id="coloumn5">Gender</th>
+                <th id="coloumn6">Gate</th>
+                <th id="coloumn7">Seat</th>
+            </tr>
+        </table>
+</div>
+
+<div id="got"></div> 
+<h2 style="margin-left: 170px;">Payment Details</h2>
+<div id="payment">
+    <table>
+        <caption></caption>
+        <tr>
+            <th id="fare">Ticket Fare</th>
+            <th id="totalfare">Total Fare</th>
+        </tr>
+    </table>
+</div>
+<div id="Payment"></div>
+    <script src="../assets/js/display.js"></script>
+</body>
+
+</html>

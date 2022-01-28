@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>fantastic journeys</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body style="color:white ; text-align: center;">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <div class="myDiv" style="height: 180px;">
+    <img src="../assets/images/lo.jpg" alt="avatar" style="width:70px">
+    <div>
+      <h1 style="color: white;">FANTASTIC JOURNEYS</h1>
+    </div>
+    <div class="myDiv">
+      <h2>
+        <a href="../pages/fantastic.html"> Home</a>
+        <a href="./about.html">&nbsp; &nbsp; About</a>
+        <a href="./gallery.html">&nbsp; &nbsp; Gallery</a>
+        <a href="../pages/contactus.html">&nbsp; &nbsp; Contact</a>&nbsp; &nbsp;
+        <select name="destination" id="destination" onclick="OpenNav()">
+          <option value="select places"> Available places</option>
+        </select>
+
+        <div id="preform" class="preform">
+          <form onsubmit="got(event)">
+            <a onclick="closeNav()" href="javascript:void(0)" id="close" class="closebtn"
+              style="color :blue;  border-radius : 10%; margin-left: 650px; font-size: 25px;">
+              &#10005;</a>
+            <h4>Source</h4>
+            <input type="text" pattern="[A-Za-z]{3,255}" id="from" placeholder="Enter your source address">
+            <h4>Destination</h4>
+            <select name="destination" id="places">
+              <option class="option" value="select places">Available Places</option>
+              <optgroup label="America">
+                <option value="Chicago">Chicago</option>
+                <option value="New york">Newyork</option>
+                <option value="San francisco">San francisco</option>
+              </optgroup>
+              <optgroup label="Asia">
+                <option value="India">India</option>
+                <option value="Beijing">Beijing</option>
+                <option value="Hongkong">Hongkong</option>
+              </optgroup>
+              <optgroup label="Europe">
+                <option value="Moscow">Moscow</option>
+                <option value="England">England</option>
+                <option value="Switzerland">Switzerland</option>
+              </optgroup>
+            </select>
+            <h4>No of travellers</h4>
+            <h4>Adults(above 18)</h4>
+            <input type="number" id="adults" pattern="[0-9]{1,10}" max="10" required>
+            <h4>Children(under 18)</h4>
+            <input type="number" id="children" pattern="[0-9]{0,10}" required>
+            <h4>Date of Departure</h4>
+            <input type="date" id="departure" required>
+            <h4>Return </h4>
+            <input type="date" id="arrival"  min='2022-01-24'  required><br><br>
+            <button type="submit">submit</button>
+          </form>
+        </div>
+        <script src="../assets/js/getdetail.js"></script>
+        <script>
+          function OpenNav() {
+            document.getElementById("preform").style.width = "700px";
+          }
+          function closeNav() {
+            document.getElementById("preform").style.width = "0px";
+          }
+        </script>
+        <a href="./review.html">&nbsp; &nbsp; Reviews</a>
+      </h2>
+    </div>
+    <script src="../assets/js/available.js"></script>
+    <script src="../assets/js/getdetail.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: system-ui;
+}
+footer {
+    background-color: lightgray;
+    padding: 20px 20px;
+    display: inline-flex;
+}
+.about {
+    width : 400px;
+    text-align: center;
+}
+.footer {
+    width : 1000px;
+    text-align: center;
+}
+.navbar {
+    width: 98%;
+    padding: 10px 10px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+}
+
+span,
+a {
+    display: inline;
+    margin-left: 20px;
+    color : white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+   
+}

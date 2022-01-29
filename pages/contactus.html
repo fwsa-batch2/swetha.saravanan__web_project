@@ -4,12 +4,14 @@
 <head>
     <title>contact</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/style1.css">
+    <link rel="stylesheet"  type="text/css" href="../assets/css/common.css">
     <style>
-        body {
-            background-image: url('../assets/images/travel.jpg');
+        .contact {
+            background-image: url('../assets/images/contactus.jpg');
             background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size : 100% 100%;
+            height : 500px;
+            background-size: 100% 100%;
+
         }
         textarea {
             border-radius: 10px;
@@ -17,43 +19,66 @@
             width: 400px;
             border-color: black;
         }
-        div {
-            width : 500px;
-            background-color: white;
-            margin-left : 700px;
-            padding : 30px 30px;
-            height : 700px;
-            border-radius: 30px;
+        .otherapp {
+            margin-top: 100px;
+            text-align: center;
+            padding : 10px 10px;
         }
         img {
             height : 100px;
             width : 150px;
-        }
-        mark {
-            color :blue;
-            background-color: white;
         }
     </style>
     <h1 style="text-align: center;">Contact us </h1>
 </head>
 
 <body>
-    <div>
+    <div class="contact">
+        <div class="navbar">
+            <span>
+                <a href="home.html">Home</a>    
+                <a href="./about.html">About us</a>
+                <a href="./reservation.html">Tours</a>
+                <a href="./contactus.html">Contact us<a>
+                <a href="./review.html">Reviews</a>
+                <a href="../index.html" style="margin-left:1000px;">Login</a>
+            </span>
+        </div>
+    </div><br><br>
+    <h3 style="text-align: center;">LEAVE US YOUR INFO</h3>
+    <p style="text-align: center;">We will get back to you</p>
+
+    <div style="text-align: center;">
         <form onsubmit="contact(event)">
-            <h2>For Any Queries and Suggestions</h2>
-            <h3>Email-id</h3>
             <input type="email"id="email" placeholder="myname@gmail.com" required><br><br>
-            <h3>Queries/Suggestions</h3>
-            <textarea required id="query"></textarea><br><br>
-            <button style="margin-left : 110px;"><strong>Submit</strong></button>
+            <textarea required id="query" placeholder="Any Message here"></textarea><br><br>
+            <button><strong>Submit</strong></button>
         </form>
+        </div>
+        <div class="otherapp">
         <h2>Follow us on</h2>
-        <h2>Email-id:<mark> fantasticjourneys09@gmail.com</mark></h2>
+        <h2>Email-id:<h2 style="color: blue;"> fantasticjourneys09@gmail.com</h2></h2>
         <a href="https://twitter.com/"><img src="../assets/images/twitter.png" alt="twitter"></a>
         <a href="https://facebook.com/"><img src="../assets/images/fb.png" alt="facebook"></a>
-        <a href="https://www.instagram.com/?hl=en"><img src="../assets/images/instra.png" style="margin-left : 350px;margin-top: -300px;" alt="instagram"></a>
+        <a href="https://www.instagram.com/?hl=en"><img src="../assets/images/instra.png" alt="instagram"></a>
     </div>
     <br><br>
+    <footer>
+         <div style="margin-left: 400px;" class="about">
+         <h3>About us</h3><hr>
+         <p>Since 1990 , Fantastic journeys has been committed to bringing
+        travelers the best in value and quality travel arrangements . We are
+        passionate about travel and cooperate travelers high-touch services
+        to facilate their business travel needs and sharing the world's wonders
+        on the leisure travel side</p>
+         </div>
+         <div class="footer">
+             <h3>Contact INFO</h3><hr>
+             <h4>Email-id :<h4 style="color: blue;">fantasticjourneys09@gmail.com</h4></h4>
+             <h4>Phone-no : 2-500-333-3445</h4>
+             <a href="https://www.google.com/maps/place/FANTASTIC+JOURNEY/@2.7952969,99.0526308,8.86z/data=!4m5!3m4!1s0x303131d790e5996f:0x7d1eac01e5e5c86d!8m2!3d3.5784826!4d98.6881385" style="color : black">Location</a>
+         </div>
+    </footer>
     <script src="../assets/js/contact.js"></script>
 </body>
 

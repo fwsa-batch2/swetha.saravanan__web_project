@@ -49,6 +49,8 @@ switch(destination) {
 }
 let datas=JSON.parse(localStorage.getItem("LoginDetails"))
 document.getElementById("name").innerHTML+=datas.Username;
+console.log(datas);
+console.log(datas.Username);
 
 
 

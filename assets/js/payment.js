@@ -22,5 +22,5 @@ function payment(event) {
   localStorage.getItem("Payment");
 }
 function redirect() {
-  window.location.href="../../pages/ticket.html";
+  window.location.href="./ticket.html";
 }

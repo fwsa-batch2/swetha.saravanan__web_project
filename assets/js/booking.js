@@ -1,6 +1,6 @@
 //rename - goToPage()
 
-function Click() {
+function goToPage() {
     let destination = document.getElementById("destination").value;
     console.log(destination);
     window.location.href = "../../pages/"+  destination.lowercase() +".html";
@@ -65,7 +65,6 @@ function booking(event) {
         let phone = document.getElementById("phone").value;
         let admobile = document.getElementById("adphone").value;
         let Emailid = document.getElementById("email").value;
-        let ademail = document.getElementById("ademail").value;
         let Address = document.getElementById("address").value;
        let main = {
             "id:": i,
@@ -76,7 +75,6 @@ function booking(event) {
             "Mobile": phone,
             "Exmobile": admobile,
             "Email": Emailid,
-            "Exemail": ademail,
              "Address": Address
         }
 
@@ -87,5 +85,5 @@ function booking(event) {
         getback();
     }}
 function redirect() {
-    window.location.href="../../pages/payment.html";
+    window.location.href="../pages/payment.html";
 }

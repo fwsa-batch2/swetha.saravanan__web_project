@@ -2,75 +2,128 @@
 <html lang="en">
 
 <head>
-    <title>About us</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
     <style>
-
-        body {
-            background-image:linear-gradient(to left, #b380ec, #75a0ec);
-            font-family: system-ui;
+        .about {
+            background-image: url('../assets/images/nature.jpg');
+            background-repeat: no-repeat;
+            height: 70%;
+            width: 100%;
+            background-size: 100% 100%;
         }
-        p ,li{
+
+        .head {
+            margin-top: 300px;
+            font-size: 50px;
+        }
+
+        .head:hover {
+            color: white;
+        }
+
+        img {
+            height: 500px;
+            width: 600px;
+            margin-top: 50px;
+            margin-left: 50px;
+            border-radius: 10px;
+            float: left;
+        }
+
+        p {
             font-size: 25px;
-        }
-        div {
-            box-shadow: 1px 1px 1px 1px;
-            margin-left: 200px;
-            width: 700px;
-            margin-top: 70px;
-            padding: 15px 16px;
-            background-color: rgb(233, 241, 241);
-            border-radius: 20px;
+            margin-top: 100px;
+            
         }
 
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        div {
+            width: 1200px;
+        }
     </style>
 </head>
 
 <body>
-        <h1 style="margin-left: 800px;"> FANTASTIC JOURNEYS</h1><br>
-    <div>
-    <h1>Travelstore people</h1>
-     <p>Since 1990 , Fantastic journeys has been committed to bringing
-        travelers the best in value and quality travel arrangements . We are
-        passionate about travel and cooperate travelers high-touch services
-        to facilate their business travel needs and sharing the world's wonders
-        on the leisure travel side</p></div><br>
-        <div style="margin-left: 1000px;">
-            <h1>Expereience and Accuracy</h1>
-            <p>Our staff are experienced, well-traveled and have years of travel 
-                knowledge among them. They draw upon their own first-hand experiences
-                 when customizing vacations for you.</p>
+    <div class="about">
+        <div class="navbar">
+            <span>
+                <a href="home.html">Home</a>
+                <a href="./about.html">About us</a>
+                <select name="destination" id="places" onchange="goTopage()">
+                    <option class="option" value="select places">Available places</option>
+                    <optgroup label="America">
+                        <option value="chicago">Chicago</option>
+                        <option value="ny">Newyork</option>
+                        <option value="san francisco">San francisco</option>
+                    </optgroup>
+                    <optgroup label="Asia">
+                        <option value="northindia">India</option>
+                        <option value="beijing">Beijing</option>
+                        <option value="hongkong">Hongkong</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                        <option value="moscow">Moscow</option>
+                        <option value="england">England</option>
+                        <option value="switzerland">Switzerland</option>
+                    </optgroup>
+                </select>
+                <a href="./contactus.html">Contact us<a>
+                        <a href="./review.html">Reviews</a>
+                        <a href="../index.html" style="margin-left:1000px;">Login</a>
+            </span>
         </div>
-        <div>
-            <h1>Quality is our focus</h1>
-            <p>We insist on prompt and pleasant customer service and 
-      the best hotels, visitor attractions and entertainment. By sharing
-       with you the hidden places not mentioned in guidebooks, the local people 
-       you wouldn’t otherwise meet and the traditions you may not have
-        experienced by yourself, we ensure that you get an authentic and 
-        enhanced experience you simply could not have had on your own.</p>
-        </div>
-        <div style="margin-left: 1000px;">
-            <h1>Personal service</h1>
-            <p>Our team here is friendly and affable. We are specialists 
+        <h1 class="head" style="text-align: center;">About us</h1>
+        <p style="text-align: center;color: white; margin-left: 300px;margin-right:300px;margin-top: -30px;font-weight: bold;font-size: 25px;">Our mission is to be the leading and most trustworthy travel
+            management company that sets the standard for professionalism,
+             reliability and transparency to its customers.</p>
+    </div>
+    <div style="float: left; margin-left: 200px;">
+        <img src="../assets/images/travel1.jpg" alt="travel1">
+        <h2 style="text-align: center;">Personal service</h2>
+            <p style="margin-left: 800px;">Our team here is friendly and affable. We are specialists 
         in the destinations that we offer and possess deep product 
         knowledge about them. We will offer you a personal service and 
         will handle your booking from start to finish ensuring that all
          your travel needs are met.</p>
         </div>
-        <div>
-            <h1>Strength</h1>
-            <ul>
-                <li>We have varied experience with global networking travel management companies</li>
-                <li>Broad expertise in the local travel market</li>
-                 <li>Client-first approach to business</li>
-            </ul>
+    </div>
+    <div style="float: left; margin-left: 200px;">
+        <img src="../assets/images/travel5.jpeg" alt="travel5">
+        <h2>Expereience and Accuracy</h2>
+        <p style="margin-left: 800px;">Our staff are experienced, well-traveled and have years of travel 
+            knowledge among them. They draw upon their own first-hand experiences
+             when customizing vacations for you.</p>
+             
+
+    </div>
+    <footer>
+        <div style="margin-left: 400px;" class="about1">
+        <h3>About us</h3><hr>
+        <p>Since 1990 , Fantastic journeys has been committed to bringing
+       travelers the best in value and quality travel arrangements . We are
+       passionate about travel and cooperate travelers high-touch services
+       to facilate their business travel needs and sharing the world's wonders
+       on the leisure travel side</p>
         </div>
-        <div style="margin-left: 1000px;">
-            <h1>Common philosophy</h1>
-            <p>Our mission is to be the leading and most trustworthy travel
-                 management company that sets the standard for professionalism,
-                  reliability and transparency to its customers.</p>
+        <div class="footer">
+            <h3>Contact INFO</h3><hr>
+            <h4>Email-id :<h4 style="color: blue;">fantasticjourneys09@gmail.com</h4></h4>
+            <h4>Phone-no : 2-500-333-3445</h4>
+            <a href="https://www.google.com/maps/place/FANTASTIC+JOURNEY/@2.7952969,99.0526308,8.86z/data=!4m5!3m4!1s0x303131d790e5996f:0x7d1eac01e5e5c86d!8m2!3d3.5784826!4d98.6881385" style="color : black">Location</a>
+            <h3 style="text-align: center; margin-top: 250px;margin-right: 600px;">&#169; Designed by Swetha M S</h3>
         </div>
+   </footer>
+
+    <script src="../assets/js/redirect.js"></script>
 </body>
 
 </html>

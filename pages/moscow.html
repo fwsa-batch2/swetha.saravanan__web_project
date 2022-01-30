@@ -1,16 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>moscow</title>
-<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moscow</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .moscow {
+            background-image: url('../assets/images/kremlinmc.jpg');
+            background-repeat: no-repeat;
+            height : 90%;
+            background-size: 100% 100%; 
+        }
+        .head {
+            margin-left: 300px;
+            color : white;
+            font-size: 60px;
+            margin-top: 250px;
+        }
+    </style>
 </head>
 <body>
-    <div class="box">
-        <img src="../assets/images/bolshoi.jpg" class="img" alt="kremlin">
-        <h1 class="name">
+    <div class="moscow">
+        <div class="navbar">
+            <span>
+                <a href="home.html">Home</a>    
+                <a href="./about.html">About us</a>
+                <select name="destination" id="places"  onchange="goTopage()">
+                    <option class="option" value="select places" >Available places</option>
+                    <optgroup label="America">
+                      <option value="chicago">Chicago</option>
+                      <option value="ny">Newyork</option>
+                      <option value="san francisco">San francisco</option>
+                    </optgroup>
+                    <optgroup label="Asia">
+                      <option value="northindia">India</option>
+                      <option value="beijing">Beijing</option>
+                      <option value="hongkong">Hongkong</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                      <option value="moscow">Moscow</option>
+                      <option value="england">England</option>
+                      <option value="switzerland">Switzerland</option>
+                    </optgroup>
+                  </select>
+                <a href="./contactus.html">Contact us<a>
+                <a href="./review.html">Reviews</a>
+                <a href="../index.html" style="margin-left:1000px;">Login</a>
+            </span>
+        </div>
+        <h1 class="name" style="margin-left : 800px;">
           MOSCOW
         </h1>
-    </div> <br>
+    </div>
         <div class="day1">
             <h2>Trip to Moscow</h2>
             <h2>It takes 6 days to travel around Moscow</h2>
@@ -86,5 +130,6 @@ of its Neoclassical grandeur.</p>
                 Germany and Chile taking place at the stadium. The 2018 Fifa World Cup 
                 also took place there, when Russia hosted the competition. </p>
         </figure><br>
+        <script src="../assets/js/redirect.js"></script>
 </body>
 </html>

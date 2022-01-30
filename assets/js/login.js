@@ -33,3 +33,14 @@ function isExist(paramemail, parampassword) {
     }
     return isexist;
 }
+function logasadmin(event) {
+    event.preventDefault();
+    let Email = document.getElementById("email").value;
+    let pwd = document.getElementById("password").value;
+    if(Email=="admin@gmail.com"&& pwd=="admin") {
+        window.location.href="../../pages/home.html";
+    }
+    else {
+        alert("Something wrong");
+    }
+}

@@ -8,9 +8,10 @@ footer {
     background-color: lightgray;
     padding: 20px 20px;
     display: inline-flex;
+    margin-top: 100px;
+    width : 100%;
 }
-.about {
-    width : 400px;
+.about1 {
     text-align: center;
 }
 .footer {
@@ -34,4 +35,19 @@ a {
     font-weight: bold;
     font-size: 20px;
    
+}
+select {
+    background: none;
+    appearance: none;
+    border: none;
+    margin-left:30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+option,optgroup {
+    color: black;
+}
+a:hover {
+    color : rgb(195, 228, 195);
 }

@@ -56,10 +56,6 @@ a {
   margin-top: 15%;
   margin-left: 38%;
 }
-.box  {
-   margin-top:-50px;
-   margin-bottom : 0px;
-}
 .day1 {
   border: 1px solid;
   padding: 10px 10px;
@@ -67,7 +63,7 @@ a {
   margin-left: 500px;
   width: 800px;
   margin-bottom: 150px;
-  margin-top : 500px;
+  margin-top : 100px;
 }
 input {
   width : 200px;

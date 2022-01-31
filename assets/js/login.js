@@ -44,3 +44,7 @@ function logasadmin(event) {
         alert("Something wrong");
     }
 }
+function logout() {
+    localStorage.removeItem("LoginDetails");
+    alert("You have been logged out");
+}

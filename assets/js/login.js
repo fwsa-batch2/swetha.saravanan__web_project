@@ -14,7 +14,7 @@ function login(event) {
     let isEmailExist = isExist(email , password);
     if (isEmailExist) {
         localStorage.setItem("LoginDetails", JSON.stringify(get));
-        window.location.href = "../../pages/home.html";
+        window.location.href = "./pages/home.html";
     }
     else {
        alert("Dear User, As You are the new user for this application Sign Up please.");
@@ -38,7 +38,7 @@ function logasadmin(event) {
     let Email = document.getElementById("email").value;
     let pwd = document.getElementById("password").value;
     if(Email=="admin@gmail.com"&& pwd=="admin") {
-        window.location.href="../../pages/home.html";
+        window.location.href="./pages/home.html";
     }
     else {
         alert("Something wrong");

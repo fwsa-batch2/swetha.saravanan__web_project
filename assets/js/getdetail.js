@@ -16,7 +16,7 @@ function got(event) {
   }
   localStorage.setItem("TravellerDetails", JSON.stringify(Details));
   console.log(destination);
-  window.location.href="../../pages/"+destination+".html";
+  window.location.href="../pages/"+destination+".html";
 }
 const data = new Date();
 let month = JSON.stringify(data.getMonth() + 1);

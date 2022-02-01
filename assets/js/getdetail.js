@@ -16,35 +16,7 @@ function got(event) {
   }
   localStorage.setItem("TravellerDetails", JSON.stringify(Details));
   console.log(destination);
-  switch(destination) {
-    case "Chicago":
-      window.location.href = "./chicago.html";
-      break;
-    case "New york":
-      window.location.href = "./ny.html";
-      break;
-    case "Switzerland":
-      window.location.href = "./switzerland.html";
-      break;
-    case "England":
-      window.location.href = "./england.html";
-      break;
-    case "Beijing":
-      window.location.href = "./beijing.html";
-      break;
-    case "Moscow":
-      window.location.href = "./moscow.html";
-      break;
-    case "India":
-      window.location.href = "./northindia.html";
-      break;
-    case "San francisco":
-      window.location.href = "./san francisco.html";
-      break;
-    case "Hongkong":
-      window.location.href = "./hongkong.html";
-      break;
-  }
+  window.location.href="../../pages/"+destination+".html";
 }
 const data = new Date();
 let month = JSON.stringify(data.getMonth() + 1);

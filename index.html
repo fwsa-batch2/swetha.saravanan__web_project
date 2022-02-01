@@ -2,92 +2,97 @@
 <html lang="en">
 
 <head>
-    <title style="text-align :center">login</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantastic journeys</title>
     <style>
-        .background {
-            background-image: url('./assets/images/log.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
         * {
             font-family: system-ui;
         }
-        img {
-            width: 20%;
-            border-radius: 50%;
-            margin-bottom: 20px;
+
+        a:hover {
+            color: rgb(195, 228, 195);
         }
 
-        input {
-            width: 300px;
-            border-radius: 10px;
-            padding: 10px 10px;
-            margin-bottom: 15px;
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: system-ui;
         }
 
-        button {
-            color: white;
-            background-color: #04AA6D;
-            padding: 10px 10px;
-            width: 200px;
-            border: none;
-            border-radius: 10px;
-        }
-        a {
-            text-decoration: none;
-            margin-top: 200px;
-            color: white;
-            font-size : 20px;
-        }
-
-        .login {
-            margin-top: 100px;
-            width: 500px;
+        .navbar {
+            width: 98%;
             padding: 20px 20px;
-            border-radius: 10%;
             background: rgb(0, 0, 0);
             background: rgba(0, 0, 0, 0.5);
             color: #f1f1f1;
-            margin-left:600px;
         }
-        p {
+
+        select {
+            background: none;
+            appearance: none;
+            border: none;
+            margin-left: 30px;
             font-size: 20px;
+            font-weight: bold;
+            color: white;
         }
-        a:hover {
-            color: blue;
+
+        span,
+        a {
+            display: inline;
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        .homepage {
+            background-image: url('./assets/images/europe.jpg');
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        button {
+            background: none;
+            padding : 20px 20px;
+        }
+        option,
+        optgroup {
+            color: black;
+        }
+
+        .form {
+            width: 0%;
         }
     </style>
 </head>
 
-<body class="background">
-    <h2></h2>
-        <a href="pages/logasadmin.html" style="margin-left: 1600px;font-size: bold;color: black;">Login as Admin</a>
-        <form onsubmit="login(event)">
-            <div class="login">
-                <h1 style="margin-left : 125px;">Fantastic journeys</h1>
-                <h2 style="margin-left : 80px;">Welcome to Fantastic journeys</h2>
-                <strong>
-                    <h1  style="margin-left : 175px;"> Login form</h1>
-                    <img src="./assets/images/login.jpg" style="margin-left : 190px;" alt="avatar">
-
-                    <h2 style="margin-left : 190px;"> Email-id :</h2>
-                    <input type="email" style="margin-left : 90px;" placeholder="Enter your Email-id" id="email"
-                        pattern="[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,}$" required>
-                    <h2 style="margin-left : 190px;"> Password :</h2>
-                    <input type="password" style="margin-left : 90px;"placeholder="password" id="password"
-                        pattern="[A-Za-z0-9]{5,15}" required><br><br>
-                    <a href="../pages/fantastic.html">
-                        <button type="submit" style="margin-left : 150px;"><strong>Login</strong></button></a><br><br><br>
-                    <p id="log" style="margin-left : 150px;"></p>
-                    <a href="./pages/forget.html"style="margin-left : 140px;"> Forget password ?</a>
-                    <a href="./pages/register.html"> &nbsp;&nbsp;&nbsp;New user ?</a>
-                    </strong>
-            </div>
-        </form>
-        <button type="submit" onclick="logout()"style="margin-left:1500px;"><strong>Log out</strong></button>
-        
-            <script src="./assets/js/login.js"></script>
+<body>
+    <div style="text-align: center;">
+        <img src="./assets/images/logo.png" style="width:150px;" alt="logo">
+        <h1>Fantastic Journeys</h1>
+        <h3>A smiling agent for you</h3>
+    </div>
+    <div class="homepage">
+        <div class="navbar">
+            <span>
+                <a href="index.html">Home</a>
+                <a href="./pages/about.html">About us</a>
+                <a href="./pages/reservation.html">Plan your trip</a>
+                <a href="./pages/contactus.html">Contact us<a>
+                        <a href="./pages/review.html">Reviews</a>
+                        <a href="./pages/login.html" class="login" style="margin-left: 1700px;margin-top: -10px;">Login</a>
+            </span>
+        </div>
+    </div>
+    <br>
+    </div>
+    <script src="../assets/js/redirect.js"></script>
 </body>
 
 </html>

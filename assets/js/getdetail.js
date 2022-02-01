@@ -18,31 +18,31 @@ function got(event) {
   console.log(destination);
   switch(destination) {
     case "Chicago":
-      window.location.href = "../../pages/chicago.html";
+      window.location.href = "./chicago.html";
       break;
     case "New york":
-      window.location.href = "../../pages/ny.html";
+      window.location.href = "./ny.html";
       break;
     case "Switzerland":
-      window.location.href = "../../pages/switzerland.html";
+      window.location.href = "./switzerland.html";
       break;
     case "England":
-      window.location.href = "../../pages/england.html";
+      window.location.href = "./england.html";
       break;
     case "Beijing":
-      window.location.href = "../../pages/beijing.html";
+      window.location.href = "./beijing.html";
       break;
     case "Moscow":
-      window.location.href = "../../pages/moscow.html";
+      window.location.href = "./moscow.html";
       break;
     case "India":
-      window.location.href = "../../pages/northindia.html";
+      window.location.href = "./northindia.html";
       break;
     case "San francisco":
-      window.location.href = "../../pages/san francisco.html";
+      window.location.href = "./san francisco.html";
       break;
     case "Hongkong":
-      window.location.href = "../../pages/hongkong.html";
+      window.location.href = "./hongkong.html";
       break;
   }
 }

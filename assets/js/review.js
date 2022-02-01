@@ -29,7 +29,7 @@ function rearrange(event) {
    }
    review.unshift(Rating);
    localStorage.setItem("ratings",JSON.stringify(review));
-   window.location.href="../../pages/display review.html";
+   window.location.href="./display review.html";
 }
 let getitem=localStorage.getItem("LoginDetails");
              if(getitem == null){

@@ -4,38 +4,6 @@ function goToPage() {
     let destination = document.getElementById("destination").value;
     console.log(destination);
     window.location.href = "../../pages/"+  destination.lowercase() +".html";
-    //future requiredment => add/remove/modify
-
-    // switch (destination) {
-    //     case "Chicago":
-    //         window.location.href = "../../pages/chicago.html";
-    //         break;
-    //     case "New york":
-    //         window.location.href = "../../pages/ny.html";
-    //         break;
-    //     case "San francisco":
-    //         window.location.href = "../../pages/san francisco.html";
-    //         break;
-    //     case "India":
-    //         window.location.href = "../../pages/northindia.html";
-    //         break;
-    //     case "Beijing":
-    //         window.location.href = "../../pages/beijing.html";
-    //         break;
-    //     case "Hongkong":
-    //         window.location.href = "../../pages/hongkong.html";
-    //         break;
-    //     case "Moscow":
-    //         window.location.href = "../../pages/moscow.html";
-    //         break;
-    //     case "England":
-    //         window.location.href = "../../pages/england.html";
-    //         break;
-    //     case "Switzerland":
-    //         window.location.href = "../../pages/switzerland.html";
-    //         break;
-
-    // }
 }
 
 let details = [];

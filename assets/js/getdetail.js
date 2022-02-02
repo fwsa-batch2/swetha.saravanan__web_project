@@ -30,3 +30,4 @@ if (month.length == 1) {
 const today = `${data.getFullYear()}-${month}-${date}`
 console.log(today);
 document.getElementById('departure').min = `${today}`;
+document.getElementById('arrival').min=`${today}`;

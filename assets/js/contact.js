@@ -18,4 +18,3 @@ Contact.push(connect);
 localStorage.setItem("Contact",JSON.stringify(Contact));
 alert("Your query or Suggestion sent succesfully.Thank you");
 }
-localStorage.removeItem("user");

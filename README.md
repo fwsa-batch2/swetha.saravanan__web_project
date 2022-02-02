@@ -1,8 +1,8 @@
 # Fantastic Journey
-## Netlify link 
-https://fantasticjourneyapp-ui-swethasaravanan.netlify.app/
+## Live URL link 
+https://fwsa-batch2.github.io/swetha.saravanan__web_project/
 ## Sonarcloud link
-https://sonarcloud.io/summary/overall?id=fwsa-batch-02_fantasticjourneyapp-ui
+https://sonarcloud.io/project/overview?id=fwsa-batch2_swetha.saravanan__web_project
 ## Features
 * Register
 * Login

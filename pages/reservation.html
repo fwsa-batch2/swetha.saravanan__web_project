@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>booking</title>
     <style>
-         .div {
-            display: inline;
+         *{
+           font-family: system-ui;
+         }
+         .preform {
+            display: inline-flex;
             padding: 30px 30px;
+            background-color: lightgray;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       
         }
         input {
@@ -34,9 +40,10 @@
 </head>
 <body>
     <h1 style="text-align: center;">Plan you trip</h1>
-    <div class="div" style="margin-left: 400px; margin-top: 200px;">
-        <img src="../assets/images/travel.gif" alt="travel" style="margin-top: 200px;">
-       <div id="preform" class="preform" style="margin-left: 1000px;margin-top: -450px;">
+    <div class="div" style="margin-left: 400px; ">
+       
+       <div id="preform" class="preform" style="margin-left: 100px;margin-top: 200px;">
+        <img src="../assets/images/travel.gif" alt="travel">
             <form onsubmit="got(event)">
               <input type="text" pattern="[A-Za-z]{3,255}" id="from" placeholder="Enter your source address"><br>
               <select name="destination" id="places">
@@ -66,6 +73,7 @@
               <button type="submit">Submit</button>
             </form>
         </div>
+        <p style="text-align: center;"></p>
     </div>
     <script src="../assets/js/getdetail.js"></script>
     

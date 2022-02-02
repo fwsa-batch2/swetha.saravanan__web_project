@@ -38,6 +38,8 @@ button {
   font-size :15px;
   border-radius: 50px;
   font-weight: bold;
+  width : 300px;
+  margin-left: 250px;
 }
 a {
   text-decoration: none;

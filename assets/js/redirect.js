@@ -6,5 +6,6 @@ function goTopage() {
 const loginDetails=JSON.parse(localStorage.getItem("LoginDetails"));
 if(loginDetails==null) {
     alert("Please SignIn to get more details");
-    window.location.href="../../pages/login.html";
+    window.location.href="./pages/login.html";
 }
+

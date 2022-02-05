@@ -1,8 +1,8 @@
 let Pay=[];
-function paying() {
-  let details=JSON.parse(localStorage.getItem("Payment"));
+function onPageload() {
+  const paymentDetails=JSON.parse(localStorage.getItem("Payment"));
   if(details) {
-    Pay=details;
+    Pay=paymentDetails;
   }
 }
 function payment(event) {

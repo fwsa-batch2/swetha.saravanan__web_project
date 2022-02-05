@@ -1,11 +1,11 @@
 let Contact=[];
-function GetBack() {
+function onPageload() {
     let Connecting=JSON.parse(localStorage.getItem("Contact"));
     if(Connecting) {
         Contact=Connecting
     }
 }
-GetBack();
+onPageload();
 function contact(event) {
 event.preventDefault();
 let Emailid=document.getElementById("email").value;

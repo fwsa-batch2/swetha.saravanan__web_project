@@ -18,9 +18,9 @@ function booking(event) {
     event.preventDefault();
 
     // varrrrrrrrrrrrrrrrrrrrrriable must be mean
-    let got = JSON.parse(localStorage.getItem("TravellerDetails"));//=> [] or {}
-    let adult = got.Adults; //{ "adddddddddddddddddddults:[]"}
-    let kid=got.Children;
+    let TravellerDetails = JSON.parse(localStorage.getItem("TravellerDetails"));//=> [] or {}
+    let adult = TravellerDetails.Adults; //{ "adddddddddddddddddddults:[]"}
+    let kid=TravellerDetails.Children;
     let total=parseInt(adult)+parseInt(kid);
     console.log(total);
     let i =1;

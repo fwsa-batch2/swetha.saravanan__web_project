@@ -85,6 +85,10 @@
  h2 {
    margin-bottom: 50px;
  }
+ p {
+   font-weight: bold;
+   font-size: 20px;
+ }
 </style>
 
 <body>
@@ -94,16 +98,16 @@
     <div id="get"></div>
     <div id="child"></div><br><br>
     <div id="additional">
-      <h3>Phone no </h3>
+      <p>Phone no </p>
       <input type="number" id="phone" title="Value must be less than or equal to 9999999999" min="6000000000" max="9999999999"  placeholder="Enter your phone no" style="width:300px"
       required>
-      <h3>Additional Phone no </h3>
+      <p>Additional Phone no </p>
       <input type="number" id="adphone" title="Value must be less than or equal to 9999999999" min="6000000000" max="9999999999"  placeholder="Enter your phone no" style="width:300px"
       required>
       <h3>Email</h3>
       <input type="email" id="email" pattern="[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,}$" placeholder="ex.myname@gmail.com"
         required>
-      <h3>Address</h3>
+      <p>Address</p>
       <input type="text" id="address" pattern="[A-Za-z]{1,255}" required><br><br>
       <input type="checkbox" required>I accept the <a href="./TandC.html">Terms and Conditions</a> of Fantastic journeys .<br><br>
       <button type="submit" >Submit</button>

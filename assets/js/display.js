@@ -1,15 +1,15 @@
-let details=JSON.parse(localStorage.getItem("PassengerDetails"));
-let length=details.length;
+const passengerDetails=JSON.parse(localStorage.getItem("PassengerDetails"));
+let length=passengerDetails.length;
 console.log(length);
 let i=0;
-let k=1;
+let no=1;
 let airport=["18", "22"]
 let seat=20;
 for(i of details) {
     let display=`<div id="display">
     <table>
         <tr>
-                  <td id="no">${k}</td>
+                  <td id="no">${no}</td>
                   <td>${i.Name}</td>
                   <td>${i.Age}</td>
                   <td>${i.PassPort}</td>
@@ -19,10 +19,10 @@ for(i of details) {
             </tr>
     </table></div>`
     document.getElementById("got").innerHTML+=display;
-    k++;
+    no++;
     seat++;
 }
-let data=JSON.parse(localStorage.getItem("TravellerDetails"));
+const data=JSON.parse(localStorage.getItem("TravellerDetails"));
 document.getElementById("date").innerHTML+=data.Departure;
 document.getElementById("return").innerHTML+=data.Arrival;
 document.getElementById("adult").innerHTML+=data.Adults;

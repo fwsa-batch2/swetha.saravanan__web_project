@@ -14,6 +14,7 @@ function login(event) {
     let isEmailExist = isExist(email , password);
     if (isEmailExist) {
         localStorage.setItem("LoginDetails", JSON.stringify(get));
+        window.location.href="../index.html";
     }
     else {
        alert("Dear User, As You are the new user for this application Sign Up please.");

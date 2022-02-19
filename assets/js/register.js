@@ -35,7 +35,7 @@ function submitHandler(event) {
     }
     userList.push(users);
     localStorage.setItem("users", JSON.stringify(userList));
-    window.location.href = "../index.html";
+    window.location.href = "../pages/login.html";
 }
 function isEmailALreadyUsed(currentEmail) {
     console.group("isEmailAlreadyUsed");

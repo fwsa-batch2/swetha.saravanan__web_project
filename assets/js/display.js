@@ -5,7 +5,7 @@ let i=0;
 let no=1;
 let airport=["18", "22"]
 let seat=20;
-for(i of details) {
+for(i of passengerDetails) {
     let display=`<div id="display">
     <table>
         <tr>

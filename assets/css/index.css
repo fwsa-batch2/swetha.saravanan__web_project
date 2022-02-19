@@ -1,0 +1,62 @@
+* {
+    font-family: system-ui;
+}
+
+a:hover {
+    color: rgb(195, 228, 195);
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: system-ui;
+}
+
+.navbar {
+    width: 98%;
+    padding: 20px 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+}
+
+select {
+    background: none;
+    appearance: none;
+    border: none;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+span,
+a {
+    display: inline;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.homepage {
+    background-image: url('../images/europe.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+button {
+    background: none;
+    padding : 20px 20px;
+}
+option,
+optgroup {
+    color: black;
+}
+
+.form {
+    width: 0%;
+}

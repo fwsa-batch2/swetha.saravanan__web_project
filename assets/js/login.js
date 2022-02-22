@@ -48,3 +48,6 @@ function logout() {
     localStorage.removeItem("LoginDetails");
     alert("You have been logged out");
 }
+function goToSignup() {
+    window.location.href="../../pages/register.html";
+}

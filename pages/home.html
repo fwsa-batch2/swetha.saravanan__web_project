@@ -7,7 +7,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantastic journeys</title>
     <link rel="icon" style="background: none"href="../assets/images/tour.png">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <style>
+        *{
+            font-family: system-ui;
+        }
+       #body {
+           margin-top: -20px;
+            background-image: url('../assets/images/homepage.webp');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            height : 100%;
+            color: white;
+            }
+            #popup {
+                color: black;
+                background-color: white;
+                text-align: center;
+                width : 500px;
+                margin-left: 600px;
+                margin-top: 100px;
+                height: 570px;
+                border-radius: 10px;
+                font-size: 20px;
+                margin-bottom: 2px;
+                display: none;
+                }
+        img {
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
+    <div id="body"><br>
+<div class="navbar">
+    <span>
+        <a href="home.html">Home</a>    
+        <a href="./about.html">About us</a>
+        <a href="./reservation.html">Plan your trip</a>
+        <a href="./contactus.html">Contact us<a>
+        <a href="./review.html">Reviews</a>
+        <a href="./login.html" style="margin-left:1000px;">Login</a>
+    </span>
+</div>
+<img src="../assets/images/tour.png" alt="logo" width="60" style="margin-left: 690px;margin-top:10px;">
+<h1 style="text-align: center;margin-top: -50px;">FANTASTIC JOURNEYS</h1>
+<div id="popup">
+    <img src="../assets/images/europe.jpg"alt="europe" height="300px"width="500">
+   SignIn to get more details of Fantastic journeys<br>
+   <form onsubmit="login(event)">
+   <input type="email" placeholder="Enter your Email-id" id="email"
+   pattern="[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,}$" required><br>
+   <input type="password" placeholder="password" id="password"
+                        pattern="[A-Za-z0-9]{5,15}" required><br>
+    <button>SignIn</button></form><br>
+   New User? <button onclick="goToSignup()">SignUp</button>
+ </div>
+</div>
+
+<script src="../assets/js/login.js"></script>
+<script>
+    const loginDetails=JSON.parse(localStorage.getItem("LoginDetails"));
+    if(loginDetails==null) {
+        document.getElementsByTagName("anchor").display="none";
+        document.getElementById("popup").style.display="block";
+    }
+</script>
 
 </body>
+</html>

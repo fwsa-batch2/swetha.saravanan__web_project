@@ -6,8 +6,9 @@ function onPageload() {
         review = got;
     }
 } onPageload();
-const loginDetails = localStorage.getItem("LoginDetails");
+const loginDetails = JSON.parse(localStorage.getItem("LoginDetails"));
 let Name = loginDetails.Username;
+console.log(Name);
 let mon = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
 let date = new Date().getDate();
 let month = mon[new Date().getMonth()];

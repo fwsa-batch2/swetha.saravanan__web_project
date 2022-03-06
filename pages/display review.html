@@ -7,12 +7,27 @@
     <link rel="icon" href="../assets/images/tour.png" style="background: none">
     <title>Display review</title>
     <style>
-        div { 
+        body {
+            background-image: url('../assets/images/homepage.webp');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+         .bg {
+            background-color: rgba(255,255,255,.26);
+            background-size: 80%;
+            padding : 20px 20px;
+            
+            
+         }
+        .displayreviews { 
             padding : 10px 10px;
-            background-image :linear-gradient(to left, rgb(138, 138, 233),rgb(176, 157, 185));
+            background-color: #FFFFFF;
             border-radius: 15px;
             margin-bottom : 50px;
             height : 200px;
+            margin-left : 250px;
+            margin-right: 250px;
         }
         * {
             font-family: system-ui;
@@ -20,8 +35,30 @@
     </style>
 </head>
 <body>
-    <h1 style="text-align:center">Displaying Reviews</h1>
-    <div class="display reviews" id="get"></div>
+    <h1 style="text-align:center"> Reviews</h1>
+    <div>
+    <div class="displayreviews" id="get">
+       
+    </div class="bg">
+    <div class="displayreviews">
+        <h2>Name : Shravan</h2>
+        <h2>Date : 22-Feb-2022</h2>
+        <h2>Ratings : ⭐⭐⭐⭐⭐</h2>
+        <h2>Comments : I enjoyed the trip.</h2>
+    </div>
+    <div class="displayreviews">
+        <h2>Name : Ash</h2>
+        <h2>Date : 21-Feb-2022</h2>
+        <h2>Ratings : ⭐⭐⭐⭐⭐</h2>
+        <h2>Comments : I was delighted with the service you provided</h2>
+    </div>
+    <div class="displayreviews">
+        <h2>Name : Shagitha</h2>
+        <h2>Date : 21-Feb-2022</h2>
+        <h2>Ratings : ⭐⭐⭐⭐⭐</h2>
+        <h2>Comments :  It was a very good adventure well organised and executed. Well done !</h2>
+    </div>
+    </div>
     <script src="../assets/js/display review.js"></script>
 </body>
 </html>

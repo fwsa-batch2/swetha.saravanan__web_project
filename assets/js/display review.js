@@ -9,5 +9,5 @@
                  <h2> Feedback :${i.Comments}</h2>
              </div>`
             } 
-             document.getElementById("get").innerHTML=review;
+             document.getElementById("get").innerHTML+=review;
              

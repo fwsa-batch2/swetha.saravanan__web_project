@@ -6,14 +6,16 @@
     <title style="text-align :center">login</title>
     <style>
         .background {
-            background-image: url('../assets/images/log.jpg');
+            background-image: url('../assets/images/golden.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
         }
+
         * {
             font-family: system-ui;
         }
+
         img {
             width: 20%;
             border-radius: 50%;
@@ -23,9 +25,13 @@
         input {
             width: 300px;
             border-radius: 10px;
-            padding: 10px 10px;
+            padding: 15px 15px;
             margin-bottom: 15px;
+            font-size: 15px;
+            border: none;
+            background: #f7f7f7;
         }
+
 
         button {
             color: white;
@@ -35,11 +41,13 @@
             border: none;
             border-radius: 10px;
         }
+
         a {
             text-decoration: none;
             margin-top: 200px;
-            color: white;
-            font-size : 20px;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
         }
 
         .login {
@@ -47,14 +55,15 @@
             width: 500px;
             padding: 20px 20px;
             border-radius: 10%;
-            background: rgb(0, 0, 0);
-            background: rgba(0, 0, 0, 0.5);
-            color: #f1f1f1;
-            margin-left:600px;
+            background-color: rgba(247, 247, 247, 0.9);
+
+            margin-left: 600px;
         }
+
         p {
             font-size: 20px;
         }
+
         a:hover {
             color: blue;
         }
@@ -63,32 +72,25 @@
 
 <body class="background">
     <h2></h2>
-        <a href="../pages/logasadmin.html" style="margin-left: 1600px;font-size: bold;color: black;">Login as Admin</a>
-        <form onsubmit="login(event)">
-            <div class="login">
-                <h1 style="margin-left : 125px;">Fantastic journeys</h1>
-                <h2 style="margin-left : 80px;">Welcome to Fantastic journeys</h2>
-                <strong>
-                    <h1  style="margin-left : 175px;"> Login form</h1>
-                    <img src="../assets/images/login.jpg" style="margin-left : 190px;" alt="avatar">
+    <a href="../pages/logasadmin.html" style="margin-left: 1600px;font-size: bold;color: black;">Login as Admin</a>
+    <form onsubmit="login(event)">
+        <div class="login">
+            <img src="../assets/images/login.jpg" style="margin-left : 190px;" alt="avatar">
+            <input type="email" style="margin-left : 90px;" placeholder="GMAIL" id="email"
+                pattern="[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,}$" required>
+            <input type="password" style="margin-left : 90px;" placeholder="PASSWORD" id="password"
+                pattern="[A-Za-z0-9]{5,15}" required><br><br>
+            <a href="../pages/fantastic.html">
+                <button type="submit" style="margin-left : 150px;"><strong>Login</strong></button></a><br><br><br>
+            <p id="log" style="margin-left : 150px;"></p>
+            <a href="../pages/forget.html" style="margin-left : 140px;"> Forget password ?</a>
+            <a href="../pages/register.html"> &nbsp;&nbsp;&nbsp;New user ?</a>
+            </strong>
+        </div>
+    </form>
+    <button type="submit" onclick="logout()" style="margin-left:1500px;"><strong>Log out</strong></button>
 
-                    <h2 style="margin-left : 190px;"> Email-id :</h2>
-                    <input type="email" style="margin-left : 90px;" placeholder="Enter your Email-id" id="email"
-                        pattern="[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,}$" required>
-                    <h2 style="margin-left : 190px;"> Password :</h2>
-                    <input type="password" style="margin-left : 90px;"placeholder="password" id="password"
-                        pattern="[A-Za-z0-9]{5,15}" required><br><br>
-                    <a href="../pages/fantastic.html">
-                        <button type="submit" style="margin-left : 150px;"><strong>Login</strong></button></a><br><br><br>
-                    <p id="log" style="margin-left : 150px;"></p>
-                    <a href="../pages/forget.html"style="margin-left : 140px;"> Forget password ?</a>
-                    <a href="../pages/register.html"> &nbsp;&nbsp;&nbsp;New user ?</a>
-                    </strong>
-            </div>
-        </form>
-        <button type="submit" onclick="logout()"style="margin-left:1500px;"><strong>Log out</strong></button>
-        
-            <script src="../assets/js/login.js"></script>
+    <script src="../assets/js/login.js"></script>
 </body>
 
 </html>

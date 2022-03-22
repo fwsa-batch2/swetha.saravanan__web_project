@@ -1,83 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../assets/images/tour.png" style="background: none">
-    <title>booking</title>
-    <style>
-         *{
-           font-family: system-ui;
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../assets/images/tour.png" style="background: none">
+  <title>booking</title>
+  <style>
+    * {
+      font-family: system-ui;
+    }
+
+    body {
+           background-image: url('../assets/images/chick.jpg');
+           background-repeat: no-repeat;
+           background-size: 100%;
+           background-attachment: fixed;
          }
-         .preform {
-            display: inline-flex;
-            padding: 30px 30px;
-            background-color: lightgray;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      
-        }
-        input {
-            width : 200px;
-            margin-bottom: 10px;
-            padding: 10px 10px;
-        }
-        select {
-            width : 220px;
-            margin-bottom: 10px;
-            padding: 10px 10px;
-        }
-        button {
-            margin-left: 70px;
-            padding: 10px 10px;
-            background-color:#1e253e;
-            font-weight: bold;
-            color: white;
-            width : 100px;
-            font-size: 15px;
-        }
-       
-    </style>
+
+    .preform {
+      display: inline-flex;
+      padding: 30px 30px;
+      background-color: rgba(247, 247, 247, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    input {
+      width: 300px;
+      border-radius: 10px;
+      padding: 15px 15px;
+      margin-bottom: 15px;
+      font-size: 15px;
+      border: none;
+      background: #f7f7f7;
+    }
+
+    select {
+      width: 340px;
+      border-radius: 10px;
+      padding: 15px 15px;
+      margin-bottom: 15px;
+      font-size: 15px;
+      border: none;
+      background: #f7f7f7;
+    }
+
+    button {
+      margin-left: 70px;
+      padding: 10px 10px;
+      background-color: #1e253e;
+      font-weight: bold;
+      color: white;
+      width: 100px;
+      font-size: 15px;
+    }
+  </style>
 </head>
+
 <body>
-    <h1 style="text-align: center;">Plan you trip</h1>
-    <div class="div" style="margin-left: 400px; ">
-       
-       <div id="preform" class="preform" style="margin-left: 100px;margin-top: 200px;">
-        <img src="../assets/images/travel.gif" alt="travel">
-            <form onsubmit="got(event)">
-              <input type="text" pattern="[A-Za-z]{3,255}" id="from" placeholder="Enter your source address"><br>
-              <select name="destination" id="places">
-                <option class="option" value="select places">Where to?</option>
-                <optgroup label="America">
-                  <option value="chicago">Chicago</option>
-                  <option value="ny">Newyork</option>
-                  <option value="san francisco">San francisco</option>
-                </optgroup>
-                <optgroup label="Asia">
-                  <option value="northindia">India</option>
-                  <option value="beijing">Beijing</option>
-                  <option value="hongkong">Hongkong</option>
-                </optgroup>
-                <optgroup label="Europe">
-                  <option value="moscow">Moscow</option>
-                  <option value="england">England</option>
-                  <option value="switzerland">Switzerland</option>
-                </optgroup>
-              </select><br>
-              <input type="number" id="adults"placeholder="Adults" pattern="[0-9]{1,10}" max="10" required><br>
-              <input type="number" id="children"placeholder="Children" pattern="[0-9]{0,10}" required>
-              <h4>Check-in-date</h4>
-              <input type="date"placeholder="Check-in-date" id="departure" required>
-              <h4>Check-out-date</h4>
-              <input type="date" id="arrival"placeholder="Check-out-date"  min='2022-01-24'  required><br><br>
-              <button type="submit">Submit</button>
-            </form>
-        </div>
-        <p style="text-align: center;"></p>
+  <h1 style="text-align: center;">Plan you trip</h1>
+  <div class="div" style="margin-left: 400px; ">
+
+    <div id="preform" class="preform" style="margin-left: 290px;margin-top: 100px;">
+      
+      <form onsubmit="got(event)">
+        <input type="text" pattern="[A-Za-z]{3,255}" id="from" placeholder="Enter your source address"><br>
+        <select name="destination" id="places">
+          <option class="option" value="select places">Where to?</option>
+          <optgroup label="America">
+            <option value="chicago">Chicago</option>
+            <option value="ny">Newyork</option>
+            <option value="san francisco">San francisco</option>
+          </optgroup>
+          <optgroup label="Asia">
+            <option value="northindia">India</option>
+            <option value="beijing">Beijing</option>
+            <option value="hongkong">Hongkong</option>
+          </optgroup>
+          <optgroup label="Europe">
+            <option value="moscow">Moscow</option>
+            <option value="england">England</option>
+            <option value="switzerland">Switzerland</option>
+          </optgroup>
+        </select><br>
+        <input type="number" id="adults" placeholder="Adults" pattern="[0-9]{1,10}" max="10" required><br>
+        <input type="number" id="children" placeholder="Children" pattern="[0-9]{0,10}" required>
+        <h4>Check-in-date</h4>
+        <input type="date" placeholder="Check-in-date" onfocus="(this.type='date')" id="departure" required>
+        <h4>Check-out-date</h4>
+        <input type="date" id="arrival" placeholder="Check-out-date" min='2022-01-24' required><br><br>
+        <button type="submit">Search</button>
+      </form>
     </div>
-    <script src="../assets/js/getdetail.js"></script>
-    
+    <p style="text-align: center;"></p>
+  </div>
+  <script src="../assets/js/getdetail.js"></script>
+
 </body>
+
 </html>

@@ -1,11 +1,27 @@
 * {
     font-family: system-ui;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
 }
 
-a:hover {
-    color: rgb(195, 228, 195);
+.head {
+    margin-left:100px;
+    margin-top:280px;
+    font-weight: bold;
+    font-size: 50px;
 }
+.log {
+    margin-left: 300px;
+    width: 250px;
+    font-size: 25px;
+    border-radius: 50px;
+    background-color: #2a324c;
 
+}
+.log:hover {
+    background-color: black;
+}
 body,
 html {
     height: 100%;
@@ -14,11 +30,13 @@ html {
 }
 
 .navbar {
-    width: 98%;
+    width: 97.7%;
     padding: 20px 20px;
+    color: white;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
+    
+    
 }
 
 select {
@@ -28,25 +46,29 @@ select {
     margin-left: 30px;
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 span,
 a {
+
     display: inline;
-    margin-left: 20px;
+    margin-left: 15px;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
 
 }
 
 .homepage {
-    background-image: url('../images/europe.jpg');
+    background-image: url('../images/paris.jpg');
     height: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-attachment: fixed;
+    opacity: 0.9;
+    
 }
 button {
     background: none;
@@ -59,4 +81,10 @@ optgroup {
 
 .form {
     width: 0%;
+}
+.login {
+    margin-left: 980px;
+    width : 40px;
+    height : 50px;
+    
 }

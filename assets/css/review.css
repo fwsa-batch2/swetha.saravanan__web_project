@@ -1,0 +1,52 @@
+* {
+    font-family: system-ui;
+}
+body {
+    background-image :linear-gradient(to left, rgb(138, 138, 233),rgb(176, 157, 185));
+}
+#decorate {
+    background-image:linear-gradient(to left, #6a11cb, #2575fc);
+    padding:10px 10px;
+    width : 300px;
+    margin-left : 750px;
+    border-radius: 10px;
+}
+span {
+    font-size : 45px;
+    color: white;
+}
+input {
+    width : 250px;
+    border-radius: 10px;
+    padding : 10px 10px;
+}
+textarea {
+    width : 500px;
+    height : 200px;
+    border-radius : 15px;
+}
+button {
+    background-color: #04aa6d;
+    padding : 10px 10px;
+    color : white;
+    font-weight: bold;
+    border-radius : 10px;
+}
+select {
+    background-image:linear-gradient(to left, #6a11cb, #2575fc);
+    padding:10px 10px;
+    width : 300px;
+    border-radius: 10px;
+    appearance: none;
+    font-size : 45px;
+}
+#star1 {
+  text-align: center;
+    color : white;
+}
+div {
+    color : white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom : 20px;
+}
